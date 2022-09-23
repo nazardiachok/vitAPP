@@ -1,0 +1,29 @@
+header{
+    top:0px;
+    left:0px;
+    position:fixed;
+    min-height: 100px;
+    width:100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:crimson;
+    z-index: 10;
+}
+.logo{
+    width:90px;
+    height:90px;
+    border-radius: 1px solid black;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    text-align: center;
+    top:90px;
+}
+button{
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}

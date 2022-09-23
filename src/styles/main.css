@@ -1,0 +1,14 @@
+main{
+    position: absolute;
+    top:100px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}

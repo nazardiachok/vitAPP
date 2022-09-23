@@ -1,3 +1,11 @@
 @import "_base.css";
 @import "_fonts.css";
 @import "_colors.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
