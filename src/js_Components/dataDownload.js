@@ -1,13 +1,17 @@
+const selectedFilter = document.querySelector(".filters");
 const buttonLoadData = document.querySelector(".load_data");
 const mainDataFromApi = document.querySelector(".data_loadet_from_api");
 
 export function dataDownload() {
   buttonLoadData.addEventListener("click", () => {
+    mainDataFromApi.textContent = "";
     fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
       .then((data) => {
-        createList(data.results);
-        console.log(data);
+        const filteredCardList = data.results.filter(
+          (element) => element.status === selectedFilter.value
+        );
+        createList(filteredCardList);
       });
   });
 }
@@ -30,5 +34,5 @@ function createList(loadData) {
 
     /* console.log(element.image) */
   });
-  /* console.log(loadData) */
+  console.log(loadData);
 }

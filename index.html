@@ -10,24 +10,27 @@
   <body>
     <header>
       <div class="logo"></div>
-      <button class="filters">Filters</button>
+      <form action="">
+        <select class="filters">
+          <option value="">Category</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <input type="text" class="inputText" placeholder="Search..." />
+      </form>
+
       <button class="load_data">Load Data</button>
     </header>
 
     <main>
-      <ul class="data_loadet_from_api">
-        <li></li>
-      </ul>
+      <ul class="data_loadet_from_api"></ul>
     </main>
 
     <footer>
-      <h3>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-        corrupti tenetur ipsam dolorum nemo. Deserunt autem odit rem eveniet
-        quasi neque amet quo. Sunt, debitis ex odit sequi minima molestias.
-      </h3>
+      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
     </footer>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main2.js"></script>
   </body>
 </html>

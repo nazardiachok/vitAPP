@@ -1,14 +1,67 @@
-main{
-    position: absolute;
-    top:100px;
-    display:flex;
-    flex-wrap: wrap;
-    margin: auto;
+main {
+  max-width: 1200px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
-ul{
-    display:flex;
-    flex-wrap: wrap;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 0;
 }
-li{
-    list-style: none;
+ul:last-child {
+  margin-bottom: 100px;
+}
+/* .ulTransition {
+  opacity: 0;
+  animation: ani 1s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } */
+
+li {
+  list-style: none;
+}
+select {
+  border-radius: 5px;
+}
+input {
+  border-radius: 5px;
+  height: 20px;
+  width: 90px;
+}
+.image {
+  border-radius: 10px;
+  height: 250px;
+}
+.imageName {
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px 7px #000000;
+  padding-bottom: 10px;
+}
+figure {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+figure:hover {
+  background-color: antiquewhite;
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
