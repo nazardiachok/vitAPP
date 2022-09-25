@@ -54,7 +54,7 @@ function createList(loadData) {
     list.append(figure);
     mainDataFromApi.append(list);
 
-    figure.classList.add("ulTransition");
+    /* figure.classList.add("ulTransition"); */
   });
   console.log(loadData);
 }

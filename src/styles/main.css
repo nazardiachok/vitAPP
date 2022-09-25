@@ -11,7 +11,7 @@ ul {
   margin: auto;
   padding: auto;
   justify-content: center;
-  gap: 20px;
+
   padding-left: 0;
 }
 ul:last-child {
@@ -42,10 +42,10 @@ input {
 }
 .image {
   border-radius: 10px;
-  height: 250px;
+  height: 180px;
 }
 .imageName {
-  font-size: 19px;
+  font-size: 15px;
   text-align: center;
   color: white;
   text-shadow: 1px 2px 7px #000000;
